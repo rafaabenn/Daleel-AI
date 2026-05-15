@@ -16,9 +16,13 @@ export function ToolCard({ tool }) {
         <div className="tool-avatar" style={{ backgroundColor: tool.avatarColor }}>
           {tool.avatar}
         </div>
-        <div className="tool-rating">
-          <StarIcon filled />
-          <span>{tool.rating}</span>
+        <div className="tool-header-right">
+          {tool.isNew && <span className="tool-badge-new">Nouveau</span>}
+          {tool.isTrending && <span className="tool-badge-trending">Populaire</span>}
+          <div className="tool-rating">
+            <StarIcon filled />
+            <span>{tool.rating}</span>
+          </div>
         </div>
       </div>
       <h3 className="tool-name">{tool.name}</h3>
