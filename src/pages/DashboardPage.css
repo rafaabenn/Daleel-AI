@@ -1,0 +1,142 @@
+/* ============================================
+   DASHBOARD PAGE CSS
+   ============================================ */
+
+.dashboard-main {
+  min-height: 100vh;
+  background-color: #f5f2ec;
+}
+
+/* Dashboard Hero */
+.dashboard-hero {
+  background: linear-gradient(160deg, #75838e 0%, #616f7a 100%);
+  padding: 48px 24px 32px;
+  color: #fff;
+  border-bottom: 1px solid #5a6670;
+}
+
+.dashboard-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-subtitle {
+  font-size: 15px;
+  color: #e2e8f0;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.dashboard-subtitle strong {
+  color: #fff;
+}
+
+/* Layout */
+.dashboard-content {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e8e2d8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon-wrapper.bookmark {
+  background: #fdf5e6;
+  color: #C9A84C;
+}
+
+.stat-icon-wrapper.history {
+  background: #eef4fa;
+  color: #5B8FBF;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1a11;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #7a7060;
+  font-weight: 500;
+}
+
+/* Dashboard Tools Section */
+.dashboard-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-section-header h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c2416;
+  margin: 0;
+}
+
+.btn-manage {
+  background: transparent;
+  border: 1px solid #d0c8ba;
+  color: #5a5040;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-manage:hover {
+  background: #e8e2d8;
+  color: #1e1a11;
+}
+
+/* Grid Layout is inherited from RecommendedTools.css (.tools-grid) */

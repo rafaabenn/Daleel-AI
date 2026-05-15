@@ -1,0 +1,133 @@
+/* ============================================
+   HERO CSS
+   ============================================ */
+
+.hero {
+  background: linear-gradient(160deg, #f7f4ee 0%, #ede8de 100%);
+  padding: 72px 24px 56px;
+  border-bottom: 1px solid #e0dace;
+}
+
+.hero-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  color: #1e1a11;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.8px;
+}
+
+.hero-subtitle {
+  font-size: 15px;
+  color: #7a7060;
+  margin: 0;
+  font-weight: 400;
+}
+
+.hero-subtitle strong {
+  color: #4a4030;
+  font-weight: 600;
+}
+
+/* Search box */
+.hero-search-wrapper {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 8px;
+}
+
+.hero-search-box {
+  display: flex;
+  align-items: center;
+  background: #75838e;
+  border-radius: 28px;
+  padding: 6px 6px 6px 18px;
+  gap: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.2s ease;
+}
+
+.hero-search-box:focus-within {
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.26);
+}
+
+.search-icon {
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-input::placeholder {
+  color: #cbd5e1;
+}
+
+.search-btn {
+  background: #C9A84C;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.4);
+}
+
+.search-btn:hover {
+  background: #b8962f;
+  transform: translateY(-1px);
+}
+
+/* Pills */
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.suggestion-pill {
+  background: #75838e;
+  border: 1px solid transparent;
+  color: #ffffff;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.suggestion-pill:hover {
+  background: #C9A84C;
+  border-color: #C9A84C;
+  color: #fff;
+  transform: translateY(-1px);
+}
